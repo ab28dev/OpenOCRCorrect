@@ -1,4 +1,4 @@
-# OpenOCRCorrect
+# OpenOCRCorrect (Updated By - Abhishek Bharti)
 A framework for assisting human while correcting the OCR errors in documents, mostly dedicated to Indian Languages.
 Tested on Sanskrit, Hindi, Marathi and English.
 
@@ -11,6 +11,18 @@ Following information is updated on the fly, after correction of each page:-
 1. A domain specific dictionary which is uploaded on the fly.
 2. The domain specific dictionary is also uploaded with OCR words with high confidence as the user starts working on the document.
 3. OCR confusions specific to the documents which are uploaded on the fly.
+
+
+## Interface
+- Added these features (Highlighted Areas)
+
+![](screenshots/00.png)
+
+
+## Added Features
+- **BOLD** / UNBOLD
+- SuperScript and SubScript
+
 
 # Updated versions
 
@@ -25,11 +37,14 @@ https://www.youtube.com/watch?v=iYagbg-yKsc
 4. The user can type in slp1 format or right click on the word (right click suggestion may be a partially corrected word) to correct the words. "Ctrl+d" converts the slp1 word-under-cursor to Devanagari and removes the color coding from the word-under-cursor.
 Right click works after clicking left on the word-under-cursor. Please mail to rohitsaluja22@gmail.com or file an issue for any suggestions to correct this.
 
-# Ubuntu and Qt version
+# Ubuntu / Windows and Qt version
 
 Compiled and Tested on Ubuntu Ubuntu 16.04. with Qt 5
+Compiled and Tested on Windows 10 with Qt 5
 
 # Installation
+
+## Linux / Ubuntu
 
 1. Add the Shobhika Font to Ubuntu from https://github.com/Sandhi-IITBombay/Shobhika/releases/ for reading Devanagari:
 - Download latest version zip.
@@ -46,10 +61,27 @@ Compiled and Tested on Ubuntu Ubuntu 16.04. with Qt 5
 - $ make
 - Ignore the warnings. Will be removed in the next version.
 
+## Windows
+
+1. Add the Shobhika Font to Windows from https://github.com/Sandhi-IITBombay/Shobhika/releases/ for reading Devanagari:
+- Download latest version zip.
+- Unzip the file.
+- Follow the instruction given there
+
+2. Install qt5:
+
+3. Open QTCreator
+- Go to folder "FrameWorkCode", open qpadfinal.pro and build:
+- Ignore the warnings. Will be removed in the next version.
+
 # How to run the code?
 
+## Linux / Ubuntu
 Execute file qpadfinal in folder "FrameWorkCode"
 - $ ./qpadfinal
+
+## Windows
+Click on the green icon - Run
 
 # Creating Databse for Framework:
 
