@@ -2429,3 +2429,45 @@ void MainWindow::on_actionEnglish_triggered()
 {
     HinFlag = 0 , SanFlag = 0;
 }
+
+void MainWindow::on_actionBold_triggered()
+{
+    // Get the current font properties
+    QFont font = ui->textBrowser->currentFont();
+    // Change the bold property of the font accordingly
+    font.bold() ? font.setBold(false) : font.setBold(true);
+    //Set the font top the textEdit
+    ui->textBrowser->setCurrentFont(font);
+}
+
+
+void MainWindow::on_actionSubScript_triggered()
+{
+    // Get the current format of the text
+    QTextCharFormat format = ui->textBrowser->currentCharFormat();
+    // Check if the the format is already SubScript
+    if(format.verticalAlignment() == QTextCharFormat::AlignSubScript)
+        format.setVerticalAlignment(QTextCharFormat::AlignNormal);
+    else
+        format.setVerticalAlignment(QTextCharFormat::AlignSubScript);
+
+    // Set the updated format to the textEdit
+    ui->textBrowser->mergeCurrentCharFormat(format);
+}
+
+
+void MainWindow::on_actionSuperScript_triggered()
+{
+    // Get the current format of the text
+    QTextCharFormat format = ui->textBrowser->currentCharFormat();
+    // Check if the the format is already SuperScript
+    if(format.verticalAlignment() == QTextCharFormat::AlignSuperScript)
+        format.setVerticalAlignment(QTextCharFormat::AlignNormal);
+    else
+        format.setVerticalAlignment(QTextCharFormat::AlignSuperScript);
+
+    // Set the updated format to the textEdit
+    ui->textBrowser->mergeCurrentCharFormat(format);
+}
+
+
