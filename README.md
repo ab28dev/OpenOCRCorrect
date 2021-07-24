@@ -39,8 +39,8 @@ Right click works after clicking left on the word-under-cursor. Please mail to r
 
 # Ubuntu / Windows and Qt version
 
-Compiled and Tested on Ubuntu Ubuntu 16.04. with Qt 5
-Compiled and Tested on Windows 10 with Qt 5
+- Compiled and Tested on Ubuntu Ubuntu 16.04. with Qt 5
+- Compiled and Tested on Windows 10 with Qt 5
 
 # Installation
 
