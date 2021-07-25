@@ -2436,7 +2436,7 @@ void MainWindow::on_actionBold_triggered()
     QFont font = ui->textBrowser->currentFont();
     // Change the bold property of the font accordingly
     font.bold() ? font.setBold(false) : font.setBold(true);
-    //Set the font top the textEdit
+    //Set the font top the textBrowser
     ui->textBrowser->setCurrentFont(font);
 }
 
@@ -2451,7 +2451,7 @@ void MainWindow::on_actionSubScript_triggered()
     else
         format.setVerticalAlignment(QTextCharFormat::AlignSubScript);
 
-    // Set the updated format to the textEdit
+    // Set the updated format to the textBrowser
     ui->textBrowser->mergeCurrentCharFormat(format);
 }
 
@@ -2466,7 +2466,7 @@ void MainWindow::on_actionSuperScript_triggered()
     else
         format.setVerticalAlignment(QTextCharFormat::AlignSuperScript);
 
-    // Set the updated format to the textEdit
+    // Set the updated format to the textBrowser
     ui->textBrowser->mergeCurrentCharFormat(format);
 }
 
